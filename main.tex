@@ -1,0 +1,229 @@
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage{setspace}
+\usepackage{times}
+\usepackage{url}
+\usepackage{longtable}
+\urlstyle{same}
+\usepackage{multirow}
+% Useful for checking layout
+% \usepackage{showframe}
+% Set language
+\usepackage[german]{babel}
+\usepackage{booktabs}
+\usepackage[scale=2]{ccicons}
+% Abbreviations
+\usepackage{glossaries}
+% For big tables which span multiple pages
+\usepackage{longtable}
+% Images
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+% APA Citation Style
+\usepackage[natbibapa]{apacite}
+
+\makeglossaries
+
+\newglossaryentry{covid19}
+{
+    name=Covid-19,
+    description={Coronavirus-Krankheit-2019 ~\citep{covid19}}
+}
+\newglossaryentry{foph}
+{
+    name=FOPH,
+    description={Federal Office of Public Health}
+}
+\newglossaryentry{bfs}
+{
+    name=BFS,
+    description={Bundesamt für Statistik}
+}
+\newglossaryentry{who}
+{
+    name=WHO,
+    description={World Health Organization}
+}
+\newglossaryentry{crisis_visualization}
+{
+    name=Crisis Visualization,
+    description={Visuelle Repräsentation von Informationen über unerwünschte Situationen, welche eine Bedrohung für die Menschheit darstellen. \citep[S. 2]{mapping_landscape_of_covid19_crisis_visualizations}}
+}
+
+
+
+\usetheme[progressbar=foot, numbering=counter, background=dark]{metropolis}
+\title{Analyse und Evaluation von Corona-Datenvisualisierungen}
+\date{\today}
+\author{Yannick Hutter}
+\institute{Fachhochschule Graubünden - Digital Business Management}
+\begin{document}
+
+\maketitle
+
+
+\section{Begründung der Relevanz}
+\begin{frame}
+    \begin{center}
+        {\huge \textbf{3'000'000 erkrankte Personen}}\\
+        Im Zeitraum vom 24.02.2020 bis zum 10.03.2022 (Schweiz + Liechtenstein) ~\citep{covid19_laboratory_confirmed_cases}
+    \end{center}
+\end{frame}
+
+\begin{frame}
+    \begin{center}
+        {\huge \textbf{Datenvisualisierungen für}}
+        \begin{itemize}
+            \item Sensibilisierung
+            \item Überwachung / Gefahrenerkennung
+            \item Förderung vom gemeinsamen Verständnis
+        \end{itemize}
+    \end{center}
+\end{frame}
+
+\section{Stand der Forschung}
+\begin{frame}{Definition von Datenvisualisierungen}
+    \begin{figure}[ht]
+        \includegraphics[width=10cm]{definition_data_visualization.png}
+        \centering
+        \caption{Definition Begriff Datenvisualisierung ~\citep[S. 12]{datenvisualisierungen_modern_web}}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Mapping the Landscape of Covid19 Crisis Visualizations}
+    \begin{figure}[ht]
+        \includegraphics[width=8cm]{mapping_the_landscape_of_covid19_crisis_visualizations.png}
+        \centering
+        \caption{Mapping the Landscape of Covid19 Crisis Visualizations  ~\citep[S. 1]{mapping_landscape_of_covid19_crisis_visualizations}}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Mapping the Landscape of Covid19 Crisis Visualizations}
+    \begin{figure}[ht]
+        \includegraphics[width=10cm]{codebook_sample.png}
+        \centering
+        \caption{Ausschnitt Codebook ~\citep{mapping_landscape_of_covid19_codebook}}
+    \end{figure}
+
+    \begin{itemize}
+        \item 668 Visualisierungen untersucht, kategorisiert und codiert
+        \item Codebook  erstellt (siehe Abbildung 3)
+        \item Erstellung eines Modells zum Verständnis von Crisis Visualizations
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Mapping the Landscape of Covid19 Crisis Visualizations}
+    \begin{figure}[ht]
+        \includegraphics[width=10cm]{conceptual_framework_mapping_landscape_of_covid19.png}
+        \centering
+        \caption{Modell zum Verständnis von Crisis Visualizations  ~\citep[S. 2]{mapping_landscape_of_covid19_crisis_visualizations}}
+    \end{figure}
+
+    \begin{itemize}
+        \item Basiert auf dem Kommunikationsmodell von Lasswell
+        \item Paper behandelte die ersten vier Schritte
+    \end{itemize}
+\end{frame}
+
+\section{Forschungsfrage}
+\begin{frame}
+
+    \begin{center}
+        \textbf{Wie nimmt die allgemeine Bevölkerung Corona Datenvisualisierungen wahr?}
+    \end{center}
+\end{frame}
+
+\section{Methodische Vorgehensweise}
+\begin{frame}{Methodik}
+    \textbf{Wie sind bestehende Studien vorgegangen?}
+    \begin{itemize}
+        \item Mixed Method Ansatz (Heuristische Evaluation + Fragenbasierender Ansatz) ~\citep{evaluating_information_visualization}
+        \item Quantitativ + Qualitativ (CUE / meCUE + Fragebasierender Ansatz) ~\citep{measuring_ux_of_data_visualization}
+    \end{itemize}
+
+    \begin{figure}[ht]
+        \includegraphics[width=7cm]{meCUE_modell.png}
+        \centering
+        \caption{meCUE Modell ~\citep{meCUE_model}}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Methodik}
+    \textbf{Wie möchte ich bei meiner Arbeit vorgehen?}
+
+    \begin{itemize}
+        \item Qualitative Erhebungsmethode
+        \item Auswahl von Repräsentanten gemäss der Studie von Zhang
+        \item Nachbau der Grafik mit bestehendem Datensatz
+        \item Erstellung von verschiedenen Darstellungsformen (Original, Verletzung der Design Prinzipien, Verbesserung durch Befolgung der Design Prinzipien)
+        \item Erstellung einer Website welche die Darstellungen randomisiert anzeigt
+        \item Durchführung einer Heuristischen Evaluation / Fragebasierender Ansatz
+    \end{itemize}
+\end{frame}
+
+
+
+\begin{frame}{Aufbau}
+    \begin{figure}[ht]
+        \includegraphics[width=4cm]{quantitative_qualitative_methods.png}
+        \centering
+        \caption{Ablauf quantitatives vs. qualitatives Vorgehen}
+    \end{figure}
+\end{frame}
+\section{Zeitplan}
+\begin{frame}
+    \begin{table}
+        \begin{tabular}{@{} lr @{}}
+            \toprule
+            Aufgabe                                    & Deadline   \\
+            \midrule
+            Exposé überarbeiten                        & 07.04.2022 \\
+            Fertigstellung theoretische Fundierung     & 14.04.2022 \\
+            Auswahl von Corona Datenvisualisierungen   & 14.04.2022 \\
+            Fertigstellung Definition von Begriffen    & 21.04.2022 \\
+            Erstellung von Visualisierungen (Website)  & 28.04.2022 \\
+            Rekrutierung von Probanden (5-8 Personen)  & 28.04.2022 \\
+            Fertigstellung Konzeption der Untersuchung & 07.05.2022 \\
+            \bottomrule
+        \end{tabular}
+        \caption{Zeitplan (Eigene Darstellung)}
+    \end{table}
+\end{frame}
+
+\begin{frame}
+    \begin{table}
+        \begin{tabular}{@{} lr @{}}
+            \toprule
+            Aufgabe                              & Deadline   \\
+            \midrule
+            Erstellung des Erhebungsinstruments  & 07.05.2022 \\
+            Durchführung der Studie              & 28.05.2022 \\
+            Abgabe Exposé                        & 17.06.2022 \\
+            Auswertung der Studie                & 18.06.2022 \\
+            Fertigstellung Ergebnisdarstellung   & 25.06.2022 \\
+            Fertigstellung Ausblick / Diskussion & 25.06.2022 \\
+            Korrektur Arbeit                     & 25.06.2022 \\
+            Abgabe Arbeit                        & 25.07.2022 \\
+            \bottomrule
+        \end{tabular}
+        \caption{Zeitplan - Fortsetzung (Eigene Darstellung)}
+    \end{table}
+\end{frame}
+
+\section{Fragediskussion}
+\begin{frame}
+    \textbf{Eigene Fragen}
+    \begin{itemize}
+        \item Soll die Studie nur auf einen Teilbereich der Nachrichtentypen von Zhang reduziert werden (Top 3)?
+        \item Soll evtl. ein Remote User Testing durchgeführt werden (Maze, Hotjar)?
+    \end{itemize}
+\end{frame}
+
+\appendix
+\begin{frame}[allowframebreaks]{Anhang}
+    \bibliographystyle{apacite}
+    \urlstyle{rm}
+    \bibliography{kolloqium_presentation.bib}
+    \printglossary
+\end{frame}
+\end{document}
